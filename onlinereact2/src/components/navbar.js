@@ -5,66 +5,7 @@ export default class Navbar extends Component {
     // static propTypes = {
     //     prop: PropTypes
     // }
-    articles=[
-        {
-            "source": {
-                "id": "independent",
-                "name": "Independent"
-            },
-            "author": "Tom Kershaw",
-            "title": "Azeem Rafiq apologises after historical antisemitic text messages emerge",
-            "description": "Azeem Rafiq has issued an apology after a text message conversation emerged in which he used antisemitic slurs when discussing another cricketer in 2011.",
-            "url": "http://www.independent.co.uk/sport/cricket/azeem-rafiq-texts-antisemitism-b1960238.html",
-            "urlToImage": "https://static.independent.co.uk/2020/08/19/11/breaking-news.png?width=1200&auto=webp&quality=75",
-            "publishedAt": "2021-11-18T16:33:06Z",
-            "content": "Azeem Rafiq has issued an apology after a text message conversation emerged in which he used antisemitic slurs when discussing another cricketer in 2011.\r\nRafiqs harrowing testimony to a parliamentar… [+820 chars]"
-        },
-        {
-            "source": {
-                "id": "bbc-sport",
-                "name": "BBC Sport"
-            },
-            "author": "BBC Sport",
-            "title": "Somerset 'reprimand' Brooks over racism",
-            "description": "Somerset County Cricket Club reprimand Jack Brooks over historical tweets he sent which contained racist connotations.",
-            "url": "http://www.bbc.co.uk/sport/cricket/59334173",
-            "urlToImage": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/8FD4/production/_121602863_whatsubject.jpg",
-            "publishedAt": "2021-11-18T13:37:31.0677017Z",
-            "content": "Jack Brooks joined Somerset in 2019\r\nSomerset County Cricket Club have \"reprimanded\" Jack Brooks over historical tweets he sent which contained racist language.\r\nThe club investigated two tweets, sen… [+3068 chars]"
-        },
-        {
-            "source": {
-                "id": "espn-cric-info",
-                "name": "ESPN Cric Info"
-            },
-            "author": null,
-            "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
-            "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
-            "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
-            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
-            "publishedAt": "2020-04-27T11:41:47Z",
-            "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
-        },
-        {
-            "source": {
-                "id": "espn-cric-info",
-                "name": "ESPN Cric Info"
-            },
-            "author": null,
-            "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
-            "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
-            "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
-            "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
-            "publishedAt": "2020-03-30T15:26:05Z",
-            "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
-        }
-    ]
-    constructor(){
-        super();
-        console.log("I am news constructor")
-        this.state={articles:this.articles}
-    }
-
+   
     render() {
         return (
             <div>
