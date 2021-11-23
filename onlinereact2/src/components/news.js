@@ -17,7 +17,7 @@ export default function News(props) {
 
 
     const getData = () => {
-        const api = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5f8ff819ed22468fb9045d4069e3c75d&pageSize=${props.pageSize}`;
+        const api = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=5f8ff819ed22468fb9045d4069e3c75d&pageSize=${props.pageSize}`;
         setLoading(true)
         axios.get(api).then((res) => {
             console.log(res.data.totalResults)
@@ -40,7 +40,7 @@ export default function News(props) {
     const handlePrevious=()=>{
         console.log("Previous")
         setLoading(true)
-        const api = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5f8ff819ed22468fb9045d4069e3c75d&page=${ page - 1}&pageSize=${props.pageSize}`;
+        const api = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=5f8ff819ed22468fb9045d4069e3c75d&page=${ page - 1}&pageSize=${props.pageSize}`;
         axios.get(api).then((res) => {
             console.log(res.data.articles[0]);
             // console.log(res.data.articles[i])
@@ -57,7 +57,7 @@ export default function News(props) {
     const handleNext= ()=>{
         console.log("Next")
         setLoading(true)
-        const api = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5f8ff819ed22468fb9045d4069e3c75d&page=${ page + 1}&pageSize=${props.pageSize}`;
+        const api = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=5f8ff819ed22468fb9045d4069e3c75d&page=${ page + 1}&pageSize=${props.pageSize}`;
         axios.get(api).then((res) => {
             console.log(res.data.articles[0]);
             // console.log(res.data.articles[i])
