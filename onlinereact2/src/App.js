@@ -10,7 +10,7 @@ export default class App extends Component {
     return (
       <div>
       <Navbar/>
-      <News/>
+      <News pageSize="5"/>
         
         <h1>Ye ma ho wajahat {this.c}</h1>
       </div>
