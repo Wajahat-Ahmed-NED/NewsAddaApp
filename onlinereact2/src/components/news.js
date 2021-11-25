@@ -84,7 +84,7 @@ export default function News(props) {
                         !loading && articles.map((element, i) => {
                             // console.log("Done")
                             return <div className="col-md-4 my-3" key={i}>
-                                <NewItem title={element.title} description={element.description} imageUrl={element.urlToImage ? element.urlToImage : 'https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/303200/303217.4.jpg'} newsUrl={element.url} />
+                                <NewItem title={element.title} description={element.description} date={element.publishedAt} new1={element.source.name} author={element.author} imageUrl={element.urlToImage ? element.urlToImage : 'https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/303200/303217.4.jpg'} newsUrl={element.url} />
 
                             </div>
 
