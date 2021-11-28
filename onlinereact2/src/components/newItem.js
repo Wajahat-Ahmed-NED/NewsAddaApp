@@ -5,7 +5,7 @@ export default class NewItem extends Component {
         let { title, description, imageUrl, newsUrl, author, date, new1 } = this.props;
         return (
             <div>
-                <div className="card shadow p-3 mb-5 bg-white rounded" >
+                <div className="card shadow-lg mb-5 bg-white rounded" style={{ boxShadow: "5px 10px #888888" }}>
 
                     <img src={imageUrl} className="card-img-top" alt="..." />
                     <div className="card-body">
