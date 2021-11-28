@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 // import PropTypes from 'prop-types'
 import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
     Link
 } from "react-router-dom";
 
@@ -30,11 +27,11 @@ export default class Navbar extends Component {
                                 </li>
                                
                                 <li className="nav-item"><Link  className="nav-link" to="/business"> Business</Link></li>
-                                <li className="nav-item"><Link className="nav-link " key={"entertainment"} className="nav-link" to="/entertainment"> Entertainment</Link></li>
-                                <li className="nav-item"><Link className="nav-link " key={"health"} className="nav-link" to="/health"> Health</Link></li>
-                                <li className="nav-item"><Link className="nav-link " key={"science"} className="nav-link" to="/science"> Science</Link></li>
-                                <li className="nav-item"><Link className="nav-link " key={"sports"} className="nav-link" to="/sports"> Sports</Link></li>
-                                <li className="nav-item"><Link className="nav-link " key={"technology"} className="nav-link" to="/technology"> Technology</Link></li>
+                                <li className="nav-item"><Link className="nav-link " key={"entertainment"} to="/entertainment"> Entertainment</Link></li>
+                                <li className="nav-item"><Link className="nav-link " key={"health"}  to="/health"> Health</Link></li>
+                                <li className="nav-item"><Link className="nav-link " key={"science"} to="/science"> Science</Link></li>
+                                <li className="nav-item"><Link className="nav-link " key={"sports"} to="/sports"> Sports</Link></li>
+                                <li className="nav-item"><Link className="nav-link " key={"technology"}  to="/technology"> Technology</Link></li>
                             
                             
 
