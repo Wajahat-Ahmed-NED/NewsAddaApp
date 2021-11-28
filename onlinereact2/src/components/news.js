@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Spinner from './spinner';
+import Footer from './footer';
 
 
 export default function News(props) {
@@ -14,6 +15,7 @@ export default function News(props) {
     const [disable, setDisable] = useState(true)
     const [totalResult, setTotalResult] = useState(0)
     const [loading, setLoading] = useState(false)
+    const [footer, setFooter] = useState(false)
 
 
     const capitalizeFirstLetter = (string) => {
@@ -38,6 +40,7 @@ export default function News(props) {
             // console.log(articles)
             setLoading(false)
             props.setProgress(100)
+            setFooter(true)
         }).catch((err) => {
             console.log("Following error occured " + err)
         })
@@ -47,6 +50,7 @@ export default function News(props) {
     }, [])
 
     const handlePrevious = () => {
+        setFooter(false)
         props.setProgress(75)
         console.log("Previous")
         setLoading(true)
@@ -63,11 +67,13 @@ export default function News(props) {
             setPage(page - 1)
             setLoading(false)
             props.setProgress(100)
+            setFooter(true)
         }).catch((err) => {
             console.log("Following error occured " + err)
         })
     }
     const handleNext = () => {
+        setFooter(false)
         props.setProgress(75)
         console.log("Next")
         setLoading(true)
@@ -85,6 +91,7 @@ export default function News(props) {
             setDisable(false)
             setLoading(false)
             props.setProgress(100)
+            setFooter(true)
         }).catch((err) => {
             console.log("Following error occured " + err)
         })
@@ -123,6 +130,10 @@ export default function News(props) {
 
                 {/* <button onClick={handleNext} disabled={page+1 > Math.ceil(totalResult/10) ?true:false }className="btn btn-outline-primary">&rarr; Next</button> */}
             </div>
+            {
+                footer && <Footer /> 
+            
+            }
         </div>
     )
 }
