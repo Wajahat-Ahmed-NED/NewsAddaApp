@@ -6,7 +6,7 @@ export default function Spinner() {
             <div class="spinner-border text-primary mx-2" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
-            <div class="spinner-border text-warning mx-2" role="status">
+            {/* <div class="spinner-border text-warning mx-2" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
             <div class="spinner-border text-success mx-2" role="status">
@@ -14,7 +14,7 @@ export default function Spinner() {
             </div>
             <div class="spinner-border text-danger mx-2" role="status">
                 <span class="visually-hidden">Loading...</span>
-            </div>
+            </div> */}
             {/* <div class="spinner-border text-warning mx-2" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
